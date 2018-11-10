@@ -183,8 +183,11 @@ def player_numbers(string)
   end
   output_array.select!{|hash| hash[:team_name].include?(string)}
   output_array[0].each do |key,value|
-    puts value
+    if value.is_a(Hash)
+      output[key] = value
+    end
   end
+  puts output
 end
 
 player_numbers("Brooklyn Nets")
