@@ -158,6 +158,13 @@ def player_stats(string)
   output[string]
 end
 
+def team_colors(string)
+  game_hash.each do |team,data|
+    puts data
+  end
+end
+
+team_colors("hey")
 
 
 
