@@ -130,7 +130,7 @@ def num_points_scored(string)
   puts output[string][:points]
 end
 
-num_points_scored("Brendan Haywood")
+
 
 
 
