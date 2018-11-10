@@ -206,7 +206,7 @@ def big_shoe_rebounds
       end
     end
   end
-  puts output[string][:points]
+  puts output
 end
 
 big_shoe_rebounds
