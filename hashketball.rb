@@ -144,7 +144,19 @@ def shoe_size(string)
   output[string][:shoe].to_i
 end
 
-
+def player_stats(string)
+  output = Hash.new
+  game_hash.each do |team,data|
+    data.each do |details,more_data|
+      if more_data.is_a?(Hash)
+        more_data.each do |key,value|
+          output[key] = value
+        end
+      end
+    end
+  end
+  output[string]
+end
 
 
 
