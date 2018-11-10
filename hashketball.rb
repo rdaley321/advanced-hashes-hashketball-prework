@@ -189,7 +189,7 @@ def player_numbers(string)
   end
   output.each do |key,value|
     value.each do |names,stats|
-      puts stats
+      puts stats[:number]
     end
   end
 end
