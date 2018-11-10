@@ -174,7 +174,7 @@ def team_names
   teams
 end
 
-def player_numbers(team)
+def player_numbers(string)
   output_array = Array.new
   game_hash.each do |team,data|
     output_array << data
