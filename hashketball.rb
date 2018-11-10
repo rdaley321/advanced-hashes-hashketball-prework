@@ -176,11 +176,15 @@ end
 
 def player_numbers(string)
   output_array = Array.new
+  numbers = Array.new
+  output = Hash.new
   game_hash.each do |team,data|
     output_array << data
   end
   output_array.select!{|hash| hash[:team_name].include?(string)}
-  puts output_array
+  output_array[0].each do |key,value|
+    puts key
+  end
 end
 
 player_numbers("Brooklyn Nets")
