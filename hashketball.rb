@@ -117,6 +117,7 @@ def game_hash
 end
 
 def num_points_scored(string)
+  output = {}
   game_hash.each do |team,data|
     data.each do |details,more_data|
       puts details[:team_name]
