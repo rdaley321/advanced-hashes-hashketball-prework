@@ -174,7 +174,13 @@ def team_names
   teams
 end
 
-def player_numbers
-  
+def player_numbers(team)
+  output_array = Array.new
+  game_hash.each do |team,data|
+    output_array << data
+  end
+  output_array.select!{|hash| hash[:team_name].include?(string)}
+  puts output_array
 end
 
+player_numbers "hey"
