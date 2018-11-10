@@ -141,7 +141,7 @@ def shoe_size(string)
       end
     end
   end
-  output[string][:shoe].to_i
+  output[string][:shoe]
 end
 
 def player_stats(string)
