@@ -212,7 +212,8 @@ def big_shoe_rebounds
     shoe_array << stats[:shoe]
   end
   shoe_array.sort!
-  print largest_shoe = shoe_array[-1]
+  largest_shoe = shoe_array[-1]
+  puts output
 end
 
 big_shoe_rebounds
