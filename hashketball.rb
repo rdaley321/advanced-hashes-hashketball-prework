@@ -213,7 +213,9 @@ def big_shoe_rebounds
   end
   shoe_array.sort!
   largest_shoe = shoe_array[-1]
-  puts output
+  output.each do |names,stats|
+    puts stats
+  end
 end
 
 big_shoe_rebounds
