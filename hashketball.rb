@@ -171,7 +171,7 @@ def team_names
   teams = Array.new
   teams << game_hash[:home][:team_name]
   teams << game_hash[:away][:team_name]
-  teams
+  puts teams
 end
 
 
