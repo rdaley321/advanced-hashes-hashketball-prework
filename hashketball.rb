@@ -207,7 +207,7 @@ def big_shoe_rebounds
     end
   end
   output.each do |names,stats|
-    puts stats[:shoe]
+    print stats[:shoe]
   end
 end
 
