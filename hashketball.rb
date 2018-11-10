@@ -200,6 +200,7 @@ def big_shoe_rebounds
   shoe_array = Array.new
   largest_shoe = nil
   shoe_size_hash = Hash.new
+  big_shoe_player = nil
   game_hash.each do |team,data|
     data.each do |details,more_data|
       if more_data.is_a?(Hash)
@@ -215,7 +216,7 @@ def big_shoe_rebounds
   end
   shoe_array.sort!
   largest_shoe = shoe_array[-1]
-  shoe_size_hash
+  big_shoe_player = shoe_size_hash.has_value?
 end
 
 big_shoe_rebounds
