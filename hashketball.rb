@@ -210,7 +210,7 @@ def big_shoe_rebounds
   output.each do |names,stats|
     shoe_array << stats[:shoe]
   end
-  puts shoe_array
+  print shoe_array
 end
 
 big_shoe_rebounds
