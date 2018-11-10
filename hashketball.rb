@@ -168,7 +168,9 @@ def team_colors(string)
 end
 
 def team_names
-  teams = game_hash[:home][:team_name] + " " + game_hash[:away][:team_name]
+  teams = Array.new
+  teams << game_hash[:home][:team_name]
+  teams << game_hash[:away][:team_name]
   teams
 end
 
