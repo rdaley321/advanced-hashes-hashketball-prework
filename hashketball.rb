@@ -206,7 +206,9 @@ def big_shoe_rebounds
       end
     end
   end
-  puts output
+  output.each do |names,stats|
+    puts stats
+  end
 end
 
 big_shoe_rebounds
