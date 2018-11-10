@@ -164,7 +164,7 @@ def team_colors(string)
     output_array << data
   end
   puts output_array.select{|hash| hash[:team_name].include?("Brooklyn Nets")}.flatten!
-  puts output_array[:colors]
+  puts output_array
 end
 
 team_colors("hey")
