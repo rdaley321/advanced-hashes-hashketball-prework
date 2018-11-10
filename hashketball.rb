@@ -119,9 +119,7 @@ end
 def num_points_scored(string)
   game_hash.each do |team,data|
     data.each do |details,more_data|
-      details.each do |key,value|
-        puts key
-      end
+      puts details[:players]["Brendan Haywood"]
     end
   end
 end
