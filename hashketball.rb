@@ -220,4 +220,3 @@ def big_shoe_rebounds
   output[big_shoe_player][:rebounds]
 end
 
-big_shoe_rebounds
