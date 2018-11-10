@@ -130,6 +130,19 @@ def num_points_scored(string)
   output[string][:points]
 end
 
+def shoe_size(string)
+  output = Hash.new
+  game_hash.each do |team,data|
+    data.each do |details,more_data|
+      if more_data.is_a?(Hash)
+        more_data.each do |key,value|
+          output[key] = value
+        end
+      end
+    end
+  end
+  output[string][:shoe]
+end
 
 
 
