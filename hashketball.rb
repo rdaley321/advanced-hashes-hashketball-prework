@@ -120,7 +120,7 @@ def num_points_scored(string)
   game_hash.each do |team,data|
     data.each do |details,more_data|
       if more_data.is_a?(Hash)
-        puts more_data["Alan Anderson"][:points]
+        puts more_data[string][:points]
       end
     end
   end
