@@ -192,7 +192,6 @@ def player_numbers(string)
       numbers << stats[:number]
     end
   end
-  print numbers
+  numbers
 end
 
-player_numbers("Brooklyn Nets")
