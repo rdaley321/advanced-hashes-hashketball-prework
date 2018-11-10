@@ -127,7 +127,7 @@ def num_points_scored(string)
       end
     end
   end
-  puts output[string][:points]
+  output[string][:points]
 end
 
 
