@@ -123,6 +123,7 @@ def num_points_scored(string)
       output[details] = more_data
     end
   end
+  puts output
 end
 
 num_points_scored('Jeff')
