@@ -188,7 +188,7 @@ def player_numbers(string)
     end
   end
   output.each do |key,value|
-    puts key
+    puts value
   end
 end
 
