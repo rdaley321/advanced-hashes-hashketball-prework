@@ -159,9 +159,11 @@ def player_stats(string)
 end
 
 def team_colors(string)
+  output_array = Array.new
   game_hash.each do |team,data|
-    puts data
+    output_array << data
   end
+  puts output_array
 end
 
 team_colors("hey")
