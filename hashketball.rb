@@ -187,7 +187,9 @@ def player_numbers(string)
       output[key] = value
     end
   end
-  puts output
+  output.each do |key,value|
+    puts key
+  end
 end
 
 player_numbers("Brooklyn Nets")
