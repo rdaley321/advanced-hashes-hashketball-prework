@@ -216,8 +216,8 @@ def big_shoe_rebounds
   end
   shoe_array.sort!
   largest_shoe = shoe_array[-1]
-  big_shoe_player = shoe_size_hash.key(19)
-  puts output[big_shoe_player][:rebounds]
+  big_shoe_player = shoe_size_hash.key(largest_shoe)
+  output[big_shoe_player][:rebounds]
 end
 
 big_shoe_rebounds
