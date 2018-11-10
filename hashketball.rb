@@ -121,7 +121,7 @@ def num_points_scored(string)
     data.each do |details,more_data|
       if more_data.is_a?(Hash)
         more_data.each do |key,value|
-          puts key
+          puts value
         end
       end
     end
