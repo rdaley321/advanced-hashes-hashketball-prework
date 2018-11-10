@@ -163,7 +163,7 @@ def team_colors(string)
   game_hash.each do |team,data|
     output_array << data
   end
-  puts output_array
+  puts output_array.include?
 end
 
 team_colors("hey")
