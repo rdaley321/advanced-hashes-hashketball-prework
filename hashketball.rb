@@ -189,9 +189,10 @@ def player_numbers(string)
   end
   output.each do |key,value|
     value.each do |names,stats|
-      puts stats[:number]
+      numbers << stats[:number]
     end
   end
+  puts numbers
 end
 
 player_numbers("Brooklyn Nets")
