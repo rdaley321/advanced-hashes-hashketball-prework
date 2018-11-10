@@ -197,6 +197,7 @@ end
 
 def big_shoe_rebounds
   output = Hash.new
+  shoe_array = Array.new
   game_hash.each do |team,data|
     data.each do |details,more_data|
       if more_data.is_a?(Hash)
@@ -207,8 +208,9 @@ def big_shoe_rebounds
     end
   end
   output.each do |names,stats|
-    print stats[:shoe]
+    shoe_array << stats[:shoe]
   end
+  puts shoe_array
 end
 
 big_shoe_rebounds
