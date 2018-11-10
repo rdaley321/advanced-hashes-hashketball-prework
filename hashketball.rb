@@ -126,7 +126,7 @@ def num_points_scored(string)
   end
 end
 
-num_points_scored('Brendan Haywood')
+num_points_scored("Brendan Haywood")
 
 
 
