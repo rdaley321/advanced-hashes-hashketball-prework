@@ -120,7 +120,9 @@ def num_points_scored(string)
   output = {}
   game_hash.each do |team,data|
     data.each do |details,more_data|
-      puts more_data
+      if more_data.is_a?(Hash)
+        puts more_data
+      end
     end
   end
   puts output
