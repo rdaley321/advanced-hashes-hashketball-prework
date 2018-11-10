@@ -167,6 +167,10 @@ def team_colors(string)
   output_array[0][:colors]
 end
 
+def team_names
+  
+end
+
 
 
 
