@@ -117,15 +117,15 @@ def game_hash
 end
 
 def num_points_scored(string)
-  output = {}
   game_hash.each do |team,data|
     data.each do |details,more_data|
       if more_data.is_a?(Hash)
-        puts more_data
+        more_data.each do |key,value|
+          puts key
+        end
       end
     end
   end
-  puts output
 end
 
 num_points_scored('Jeff')
